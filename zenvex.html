@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zanvex Agency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #18002a, #2c0053);
+      color: white;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px 80px;
+      position: relative;
+    }
+    .logo {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: white;
+    }
+    header p {
+      color: #ccc;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    nav {
+      margin-top: 30px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #f0e6ff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #a855f7;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2.8rem;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #a855f7;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .service-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .portfolio-grid img {
+      width: 100%;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+    .portfolio-grid img:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      background: #15002a;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    .cta-button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      background-color: #a855f7;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .cta-button:hover {
+      background-color: #7e22ce;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: 40px auto 0;
+    }
+    .contact-form input, .contact-form textarea {
+      padding: 12px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+    }
+    .contact-form textarea {
+      height: 150px;
+      resize: vertical;
+    }
+    .contact-form button {
+      background-color: #a855f7;
+      color: white;
+      font-size: 1rem;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .contact-form button:hover {
+      background-color: #7e22ce;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="ZANVEX (2).png" alt="Zanvex Logo" class="logo">
+    <h1>Zanvex Agency</h1>
+    <p>Crafting bold brands through design, video & content</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="cta-button">Let's Work Together</a>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p style="text-align:center; max-width: 700px; margin: auto;">Zanvex is a creative powerhouse, delivering top-tier <strong>graphic design</strong>, <strong>video editing</strong>, and <strong>content writing</strong> services. We help brands tell their story through design that speaks and visuals that convert.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Graphic Designing</h3>
+        <p>Posters, branding kits, logos, social media content, brochures & more</p>
+      </div>
+      <div class="service-card">
+        <h3>Video Editing</h3>
+        <p>Reels, ads, promotional edits, YouTube content, intro animations</p>
+      </div>
+      <div class="service-card">
+        <h3>Content Writing</h3>
+        <p>Website copy, blog articles, captions, ad scripts, and SEO content</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <img src="work1.jpg" alt="Creative Work 1">
+      <img src="work2.jpg" alt="Creative Work 2">
+      <img src="work3.jpg" alt="Creative Work 3">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Information</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="First Name *" required>
+      <input type="text" placeholder="Last Name">
+      <input type="email" placeholder="Email Address *" required>
+      <input type="tel" placeholder="Phone Number">
+      <textarea placeholder="...... Enter your message......." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div style="text-align:center; margin-top: 30px; font-size: 1.2rem;">
+      📧 <strong>hello@zanvex.agency</strong><br>
+      🌐 Follow us on: Instagram • LinkedIn • YouTube
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Zanvex. All rights reserved.</p>
+  </footer>
+</body>
+</html>
